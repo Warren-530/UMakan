@@ -1,0 +1,49 @@
+/* General Styles */
+.banner,
+.hero-banner {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--spacing-md);
+  overflow: hidden;
+}
+
+.banner-image {
+  aspect-ratio: 0.24;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  max-width: 1440px;
+  border-radius: var(--border-radius-lg);
+  background-color: var(--color-background-alt);
+  box-shadow: var(--shadow-primary);
+  align-self: stretch;
+  margin: auto 0;
+  display: block;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+  .banner-image {
+    height: auto;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .banner-image {
+    transition: none;
+  }
+}
