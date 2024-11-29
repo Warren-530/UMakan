@@ -126,4 +126,19 @@ public class WebController {
         return "addCart";
     }
 
+    @GetMapping("/shippinghalfportion")
+    public String shippingHalfPortion() {
+        return "shippingHalfPortion";
+    }
+
+    @GetMapping("/diningtime")
+    public String diningTime() {
+        return "diningTime";
+    }
+
+    @GetMapping("/pickuptime")
+    public String pickupTime() {
+        return "pickupTime";
+    }
+
 }

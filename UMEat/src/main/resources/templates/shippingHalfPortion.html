@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Order confirmation page for food delivery">
+        <title>Order Confirmation</title>
+        <link rel="stylesheet" href="/css/shippingHalfPortionCss.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main class="order-confirmation" role="main">
+            <header class="header" role="banner">
+                <h1 class="header-title">Confirm Order</h1>
+                <div class="header-divider"></div>
+            </header>
+
+            <div class="main-content">
+                <section class="shipping-section" aria-labelledby="shipping-title">
+                    <div class="shipping-header">
+                        <h2 id="shipping-title" class="shipping-title">Shipping Address</h2>
+                        <button class="edit-address-btn" aria-label="Edit shipping address">
+                            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/9ed296c2b7a4611167ab6b6f0c8c714579dc612ac54976fcdfc67c763184c468?placeholderIfAbsent=true&apiKey=8655b9ec1d754c3b8ca8d9778a12d12f" alt="" width="10" height="10">
+                        </button>
+                    </div>
+                    <div class="address-container">
+                        <p class="address-text">Universiti Malaya, 50603 Kuala Lumpur, Federal Territory of Kuala Lumpur</p>
+                    </div>
+                </section>
+
+                <section class="order-summary" aria-labelledby="summary-title">
+                    <div class="summary-header">
+                        <h2 id="summary-title" class="summary-title">Order Summary</h2>
+                        <button class="edit-button" aria-label="Edit order">Edit</button>
+                    </div>
+
+                    <div class="order-items">
+                        <article class="order-item">
+                            <img class="item-image" src="https://cdn.builder.io/api/v1/image/assets/TEMP/18d5731d02eecc79d37db31db5aae39fe13112ef3bb9f52cdde77cce0ee96ded?placeholderIfAbsent=true&apiKey=8655b9ec1d754c3b8ca8d9778a12d12f" alt="Pistachio Cheesecake" width="72" height="108">
+                            <div class="item-content">
+                                <div class="item-details">
+                                    <div class="item-info">
+                                        <h3 class="item-name">Pistachio Cheesecake</h3>
+                                        <time class="item-time" datetime="2023-11-25T15:00">25 Nov, 15:00 pm</time>
+                                    </div>
+                                    <div class="item-price">
+                                        <span class="price">RM19.80</span>
+                                        <span class="quantity-text">2 items</span>
+                                    </div>
+                                </div>
+                                <div class="item-actions">
+                                    <button class="cancel-button">Cancel Order</button>
+                                    <div class="quantity-controls" role="group" aria-label="Quantity controls">
+                                        <button class="quantity-btn decrease" aria-label="Decrease quantity">-</button>
+                                        <span class="quantity-display" aria-live="polite">2</span>
+                                        <button class="quantity-btn increase" aria-label="Increase quantity">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="order-item">
+                            <img class="item-image" src="https://cdn.builder.io/api/v1/image/assets/TEMP/f75b0c1eb6d29b03d45645bd8401b4ad4061d58eba31ac89c7134c841376d0f8?placeholderIfAbsent=true&apiKey=8655b9ec1d754c3b8ca8d9778a12d12f" alt="Crazy Shawarma" width="72" height="108">
+                            <div class="item-content">
+                                <div class="item-details">
+                                    <div class="item-info">
+                                        <h3 class="item-name">Crazy Shawarma</h3>
+                                        <time class="item-time" datetime="2023-11-25T12:00">25 Nov, 12:00 pm</time>
+                                    </div>
+                                    <div class="item-price">
+                                        <span class="price">RM7.00</span>
+                                        <span class="quantity-text">1 item</span>
+                                    </div>
+                                </div>
+                                <div class="item-actions">
+                                    <button class="cancel-button">Cancel Order</button>
+                                    <div class="quantity-controls" role="group" aria-label="Quantity controls">
+                                        <button class="quantity-btn decrease" aria-label="Decrease quantity">-</button>
+                                        <span class="quantity-display" aria-live="polite">1</span>
+                                        <button class="quantity-btn increase" aria-label="Increase quantity">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="price-breakdown" aria-label="Price breakdown">
+                    <dl class="price-list">
+                        <div class="price-item">
+                            <dt>Subtotal</dt>
+                            <dd>RM16.90</dd>
+                        </div>
+                        <div class="price-item">
+                            <dt>Delivery</dt>
+                            <dd>RM2.00</dd>
+                        </div>
+                        <div class="price-item">
+                            <dt>Apply Coupons</dt>
+                            <dd>RM0.00</dd>
+                        </div>
+                    </dl>
+                </section>
+
+                <section class="coins-section" aria-labelledby="coins-title">
+                    <div class="coins-content">
+                        <h3 id="coins-title">Coins Redeem</h3>
+                        <button class="redeem-button">Enter here</button>
+                    </div>
+                    <span class="coins-value">RM-3.00</span>
+                </section>
+
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-fill"></div>
+                    <div class="progress-marker"></div>
+                </div>
+
+                <section class="total-section" aria-label="Order total">
+                    <h3>Total</h3>
+                    <span class="total-amount">RM17.90</span>
+                </section>
+
+                <div class="half-portion-section">
+                    <p class="half-portion-title">Can't finish the food?</p>
+                    <div class="half-portion-message">
+                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/e5071ff7e032779d4d32c4316a09f60f2799e1788305cb0a051d556c4b50e2fb?placeholderIfAbsent=true&apiKey=d0bcfac6773b422b93b43786ecb1116f" alt="" class="info-icon" width="65" height="61" />
+                        <p>"Half the Portion, Half the Price – Zero Waste, Full Impact!"</p>
+                    </div>
+                </div>
+
+                <button class="place-order-button" aria-label="Place your order">Place Order</button>
+            </div>
+
+    </main>
+</body>
+</html>

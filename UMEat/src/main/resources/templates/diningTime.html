@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dining Reservation</title>
+    <link rel="stylesheet" href="/css/diningTimeCss.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="dining-container">
+        <div class="reservation-wrapper">
+            <div class="header-section">
+                <div class="title-wrapper">
+                    <button class="back-button" aria-label="Go back">
+                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/9b01a39f447f0383f1b1baaa147f0bc8184f3556ba3a425cf8460916cbe1c185?placeholderIfAbsent=true&apiKey=d0bcfac6773b422b93b43786ecb1116f" alt="" class="back-arrow" width="8" height="13">
+                    </button>
+                    <h1>Dining Time</h1>
+                </div>
+                <form class="main-content" action="/submit-reservation" method="POST">
+                    <h2 class="location-title">Dining Address</h2>
+                    <div class="location-badge" role="status">KK12, UM, Kuala lumpur</div>
+                    <h3 class="time-title">Dining Time</h3>
+                    <div class="time-selector" role="button" tabindex="0" aria-label="Select dining time"></div>
+                    <p class="reservation-note" aria-live="polite">*Note: We will inform you if the reservation is full</p>
+                    
+                    <div class="form-container">
+                        <div class="form-group">
+                            <label for="partySize" class="form-label">Party Size</label>
+                            <input type="number" id="partySize" name="partySize" class="form-input" min="1" max="20" required aria-label="Enter party size">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="foodOrder" class="form-label">Food to Order</label>
+                            <input type="text" id="foodOrder" name="foodOrder" class="form-input" required aria-label="Enter food order">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="extraRequest" class="form-label">Extra Request</label>
+                            <input type="text" id="extraRequest" name="extraRequest" class="form-input" aria-label="Enter any extra requests">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="chefSelect" class="form-label">Chef select</label>
+                            <select id="chefSelect" name="chefSelect" class="form-input" aria-label="Select chef preference">
+                                <option value="">Select...</option>
+                                <option value="chef1">Chef 1</option>
+                                <option value="chef2">Chef 2</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="action-buttons">
+                        <button type="button" class="button cancel-button">Cancel</button>
+                        <button type="submit" class="button confirm-button">Confirm</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
