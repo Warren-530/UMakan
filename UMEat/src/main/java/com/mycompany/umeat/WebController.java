@@ -31,18 +31,28 @@ public class WebController {
         return "TAndC";
     }
 
-    @GetMapping("/paymenthalfportion")
-    public String paymenthalfportion() {
-        return "paymentHalfPortion";
-    }
-
     @GetMapping("/paymentfullportion")
     public String paymentfullportion() {
         return "paymentFullPortion";
     }
 
-    @GetMapping("/ordercomfirm")
-    public String ordercomfirm() {
-        return "orderComfirm";
+    @GetMapping("/chooseservice")
+    public String chooseService() {
+        return "chooseService";
+    }
+
+    @GetMapping("/orderselection")
+    public String orderSelection() {
+        return "orderSelection";
+    }
+
+    @GetMapping("/shippingfullportion")
+    public String shippingFullPortion() {
+        return "shippingFullPortion";
+    }
+
+    @GetMapping("/pickupfullportion")
+    public String pickupFullPortion() {
+        return "pickupFullPortion";
     }
 }
