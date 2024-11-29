@@ -44,12 +44,12 @@ public class WebController {
     @GetMapping("/orderselection")
     public String orderSelection() {
         return "orderSelection";
-    }//x
+    }
 
     @GetMapping("/shippingfullportion")
     public String shippingFullPortion() {
         return "shippingFullPortion";
-    }//x
+    }
 
     @GetMapping("/pickupfullportion")
     public String pickupFullPortion() {
@@ -59,7 +59,7 @@ public class WebController {
     @GetMapping("/pickuphalfportion")
     public String pickupHalfPortion() {
         return "pickupHalfPortion";
-    }//x
+    }
 
     @GetMapping("/orderconfirmed")
     public String orderConfirmed() {
@@ -69,7 +69,7 @@ public class WebController {
     @GetMapping("/ordercancelled")
     public String orderCancelled() {
         return "orderCancelled";
-    }//x
+    }
 
     @GetMapping("/reasoncancel")
     public String reasonCancel() {
@@ -139,6 +139,11 @@ public class WebController {
     @GetMapping("/pickuptime")
     public String pickupTime() {
         return "pickupTime";
+    }
+
+    @GetMapping("/pickupsuccess")
+    public String pickupSuccess() {
+        return "pickupSuccess";
     }
 
 }

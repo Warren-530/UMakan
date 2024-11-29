@@ -1,36 +1,23 @@
 :root {
-  --primary-bg: #fff;
-  --primary-text: #000;
-  --spacing-sm: 10px;
-  --min-width: 240px;
+  --primary-spacing: 10px;
+  --min-section-width: 240px;
 }
 
-.visually-hidden {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
-
-.delivery-container {
+.container {
   display: flex;
   align-items: center;
-  gap: var(--spacing-sm);
+  gap: var(--primary-spacing);
   justify-content: flex-start;
 }
 
 
-.delivery-wrapper {
+.content-wrapper {
   align-self: stretch;
   display: flex;
-  min-width: var(--min-width);
+  min-width: var(--min-section-width);
   width: 100%;
   align-items: center;
-  gap: var(--spacing-sm);
+  gap: var(--primary-spacing);
   justify-content: flex-start;
   flex: 1;
   flex-basis: 0%;
@@ -41,7 +28,7 @@
 .image-container {
   align-self: stretch;
   display: flex;
-  min-width: var(--min-width);
+  min-width: var(--min-section-width);
   width: 100%;
   flex-direction: column;
   flex: 1;
@@ -50,7 +37,7 @@
 }
 
 
-.delivery-image {
+.responsive-image {
   aspect-ratio: 0.64;
   object-fit: contain;
   object-position: center;
@@ -59,11 +46,9 @@
 
 
 @media (max-width: 991px) {
-  .delivery-wrapper,
+  .content-wrapper,
   .image-container,
-  .delivery-image {
+  .responsive-image {
     max-width: 100%;
   }
 }
-
-
