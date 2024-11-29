@@ -1,4 +1,3 @@
-/* General Styles */
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +11,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* Payment Section */
 .payment-container {
     border-radius: var(--border-radius-lg);
     background: var(--color-white);
@@ -212,168 +210,54 @@ body {
 
 .pay-button:hover,
 .pay-button:focus {
-    background-color: darken(var(--color-purple), 10%);
+    background-color: #a46a7d; /* 替代 darken 计算后的实际颜色 */
 }
 
-/* General Styles for Navbar and Content */
-.navbar {
-    background-color: #f4f4f4;
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.navbar h1 {
-    font-size: 1.5rem;
-    color: #333333;
-    margin: 0;
-}
-
-.navbar nav a {
-    text-decoration: none;
-    color: #333333;
-    margin: 0 0.5rem;
-}
-
-.navbar nav a:hover {
-    color: #ff5722;
-}
-
-/* Section Wrapper */
-.section-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    justify-content: flex-start;
-    padding: 0.5rem;
-    width: 100%;
-    max-width: 1010px;
-    margin: 0 auto;
-}
-
-/* Image Container */
-.image-wrapper,
-.image-container {
-    align-self: stretch;
-    display: flex;
-    min-width: 240px;
-    width: 100%;
-    align-items: center;
-    gap: 0.5rem;
-    justify-content: flex-start;
-    flex: 1;
-    flex-basis: 0%;
-    margin: auto 0;
-    position: relative;
-}
-
-.featured-image,
-.feature-image {
-    aspect-ratio: var(--aspect-ratio-feature, 0.79);
-    object-fit: contain;
-    object-position: center;
-    width: var(--width-lg, 990px);
-    border-radius: var(--border-radius-lg, 20px);
-    align-self: stretch;
-    min-width: var(--min-width-base, 240px);
-    margin: auto 0;
-    transition: transform var(--transition-duration, 0.3s) var(--transition-timing, ease-in-out);
-}
-
-.featured-image:hover,
-.feature-image:hover {
-    transform: scale(1.02);
-}
-
-.featured-image:focus {
-    outline: 3px solid #4A90E2;
-    outline-offset: 2px;
-}
-
-/* Badge Styles */
-.badge-container {
-    position: absolute;
-    top: var(--spacing-sm);
-    right: var(--spacing-sm);
-    border-radius: var(--border-radius-lg);
-    background-color: var(--primary-color);
-    width: var(--badge-size);
-    height: var(--badge-size);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.2s ease;
-}
-
-.badge-container:hover {
-    transform: translateY(-2px);
-}
-
-.badge {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.badge-image {
-    width: var(--badge-image-size);
-    height: var(--badge-image-size);
-    object-fit: contain;
-    border-radius: var(--border-radius-lg);
-}
-
-/* Media Queries */
-@media (max-width: 768px) {
-    .food-card-container {
-        padding: var(--spacing-sm);
+@media (max-width: 480px) {
+    .payment-container {
+        border-radius: 0;
     }
-
-    .food-card {
-        width: 100%;
+    
+    .payment-body {
+        padding: var(--spacing-lg);
     }
-
-    .food-details {
-        flex-direction: column;
-        gap: var(--spacing-sm);
-    }
-}
-
-@media (max-width: 991px) {
-    .image-wrapper,
-    .image-container {
-        max-width: 100%;
-    }
-
-    .featured-image,
-    .feature-image {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .container {
-        padding: 10px;
+    
+    .header-content {
+        margin-left: var(--spacing-lg);
     }
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .featured-image,
-    .feature-image {
-        transition: none;
+    * {
+        transition: none !important;
     }
 }
 
-/* Accessibility */
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
+:root {
+  --font-primary: 'League Spartan', sans-serif;
+  --color-brown: #391713;
+  --color-white: #f8f8f8;
+  --color-pink: #f3b5cc;
+  --color-red: #f08b8d;
+  --color-accent: #a6594b;
+  --color-purple: #bf7f96;
+  --color-border: #ffd8c7;
+  --color-pink-light: #fcddec;
+  --border-radius-sm: 10px;
+  --border-radius-md: 19px;
+  --border-radius-lg: 20px;
+  --border-radius-xl: 52px;
+  --spacing-xs: 8px;
+  --spacing-sm: 12px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 20px;
+  --font-size-xl: 24px;
+  --font-size-xxl: 28px;
+  --container-width: 480px;
+  --transition-speed: 0.3s;
 }

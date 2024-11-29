@@ -1,24 +1,91 @@
 :root {
-  /* Shared Variables */
-  --max-width: 1440px;
-  --spacing-md: 1.5rem;
-  --border-radius-lg: 20px;
-  --shadow-primary: 0 4px 4px rgba(0, 0, 0, 0.25);
+    /* General Color Scheme */
+    --background-color: #ffffff;
+    --primary-color: #4A90E2;
+    --focus-outline-color: #4A90E2;
+    --text-color: rgba(57, 23, 19, 1);
+    --border-color: rgba(255, 216, 199, 1);
+    --accent-pink: #f3b5cc;
+    --accent-red: #f08b8d;
+    --accent-brown: #a6594b;
+    --accent-purple: #bf7f96;
+    --bg-pink-light: #fcddec;
 
-  /* Colors */
-  --color-background: #ffffff;
-  --color-background-alt: #f5f5f5;
-  --color-text: #000000;
+    /* Font Settings */
+    --font-primary: 'League Spartan', sans-serif;
+    --font-secondary: 'Poppins', sans-serif;
+    --font-primary-color: #391713; /* Ensuring correct font color */
+    --font-secondary-color: #f8f8f8; /* Ensuring correct secondary font color */
 
-  /* Spacing */
-  --spacing-unit: 8px;
-  --spacing-small: calc(var(--spacing-unit) * 1);
-  --spacing-medium: calc(var(--spacing-unit) * 2);
-  --spacing-large: calc(var(--spacing-unit) * 3);
+    /* Spacing Units */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    --spacing-unit: 10px;
 
-  /* Breakpoints */
-  --breakpoint-mobile: 375px;
-  --breakpoint-tablet: 768px;
-  --breakpoint-desktop: 991px;
-  --breakpoint-large: 1440px;
+    /* Border Radius */
+    --border-radius-sm: 10px;
+    --border-radius-md: 20px;
+    --border-radius-lg: 52px;
+
+    /* Dimensions */
+    --card-width: 393px;
+    --divider-width: 323px;
+    --image-height: 200px;
+    --image-width: 393px;
+    --badge-size: 60px;
+    --badge-image-size: 48px;
+
+    /* Font Sizes */
+    --title-font-size: 18px;
+    --description-font-size: 12px;
+    --price-font-size: 18px;
+    --font-size-xs: 12px;
+    --font-size-sm: 14px;
+    --font-size-md: 16px;
+    --font-size-lg: 20px;
+    --font-size-xl: 24px;
+    --font-size-xxl: 28px;
+
+    /* Font Weights */
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+
+    /* Layout */
+    --container-max-width: 1200px;
+    --container-width: 480px; /* Override if needed */
+
+    /* Media Breakpoints */
+    --mobile-breakpoint: 480px;
+    --tablet-breakpoint: 991px;
+
+    /* Transitions */
+    --transition-duration: 0.3s;
+    --transition-fast: 150ms ease;
+    --transition-medium: 300ms ease;
+    --transition-speed: 0.3s; /* Duplicate, can be kept as the same value */
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #121212;
+        --primary-color: #6BA5E7;
+        --focus-outline-color: #6BA5E7;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    :root {
+        --transition-duration: 0s;
+    }
 }
