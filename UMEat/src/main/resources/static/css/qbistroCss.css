@@ -1,0 +1,30 @@
+.section-container {
+  display: flex;
+  align-items: center;
+  gap: var(--primary-spacing);
+  justify-content: start;
+  margin: 0 auto;
+}
+
+.image-container {
+  align-self: stretch;
+  display: flex;
+  min-width: var(--min-section-width);
+  width: 100%;
+  flex-direction: column;
+  flex: 1;
+  flex-basis: 0%;
+  margin: auto 0;
+}
+
+.responsive-image {
+  aspect-ratio: 0.32;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+}
+
+:root {
+  --primary-spacing: 10px;
+  --min-section-width: 240px;
+}

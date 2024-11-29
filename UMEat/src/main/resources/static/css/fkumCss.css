@@ -1,0 +1,29 @@
+.image-container {
+  display: flex;
+  max-width: 480px;
+  width: 100%;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.image-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: start;
+}
+
+.hero-image {
+  aspect-ratio: 0.24;
+  object-fit: contain;
+  object-position: center;
+  width: 393px;
+  border-radius: 20px;
+  align-self: stretch;
+  margin: auto 0;
+}
+
+:root {
+  --black: #000;
+  --white: #fff;
+}

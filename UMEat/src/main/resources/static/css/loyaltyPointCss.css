@@ -1,0 +1,42 @@
+.image-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: start;
+}
+
+
+.hero-image {
+    aspect-ratio: 0.64;
+    object-fit: contain;
+    object-position: center;
+    width: 990px;
+    align-self: stretch;
+    margin: auto 0;
+}
+
+
+@media (max-width: 991px) {
+    .hero-image {
+        max-width: 100%;
+    }
+}
+
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+
+
+:root {
+    --black: #000;
+    --white: #fff;
+}

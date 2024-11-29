@@ -2,143 +2,72 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Shipping Full Portion</title>
+        <title>Order Confirmation</title>
         <link rel="stylesheet" href="/css/shippingFullPortionCss.css">
     </head>
-
     <body>
-        <section class="order-container">
-            <div class="order-wrapper">
-                <header class="header">
-                    <div class="header-content">
-                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/f4929e46de36f36c51b0041ba90305025f1da358db292dfda5a0587c459533ef?placeholderIfAbsent=true&apiKey=20e9cf7e0b154765ac7db15245f319f4" alt="Back button" class="back-arrow" />
-                        <h1>Confirm Order</h1>
+        <section class="order-confirmation">
+            <!-- Header Section -->
+            <header class="header">
+                <div class="header-content">
+                    <img src="back-arrow.png" alt="Back button" class="back-arrow" />
+                    <h1>Confirm Order</h1>
+                </div>
+                <div class="main-content"></div>
+            </header>
+
+            <!-- Main Content -->
+            <main class="order-details">
+                <!-- Shipping Section -->
+                <section class="shipping-section">
+                    <div class="section-title">
+                        <h2>Shipping Address</h2>
                     </div>
-                </header>
-
-
-                <main class="main-content">
-                    <section class="shipping-section">
-                        <div class="section-title">
-                            <h2>Shipping Address</h2>
-                            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/e60271bd03916fd2419f8ec4c7d7d174f2329f95429b51eac4d8f2e219835de5?placeholderIfAbsent=true&apiKey=20e9cf7e0b154765ac7db15245f319f4" alt="" />
-                        </div>
-
-                        <div class="address-container">
-                            <div class="address-background"></div>
-                            <p class="address-text">
-                                     KK8,UM.
-                            </p>
-                        </div>
-                    </section>
-
-
-                    <div class="order-summary-header">
-                        <h3 class="summary-title">Order Summary</h3>
-                        <button class="edit-button">Edit</button>
+                    <div class="address-container">
+                        <div class="address-background"></div>
+                        <div class="address-text">KK10, um, selangor</div>
                     </div>
+                </section>
 
+                <!-- Order Summary Header -->
+                <section class="order-summary-header">
+                    <h2 class="summary-title">Order Summary</h2>
+                    <button class="edit-button">Edit</button>
+                </section>
 
-                    <hr class="divider" />
+                <!-- Divider -->
+                <div class="divider"></div>
 
+                <!-- Order Item 1 -->
+                <article class="order-item">
+                    <img src="pistachio-cheesecake.jpg" alt="Pistachio Cheesecake" class="item-image" />
+                    <div class="item-details">
+                        <!-- Item Content and Actions -->
+                    </div>
+                </article>
 
-                    <article class="order-item">
-                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/06fea39929f5821bab36b6f506a82fdb15d8aebd0cafb40e45d178706483e2dd?placeholderIfAbsent=true&apiKey=20e9cf7e0b154765ac7db15245f319f4" alt="Pistachio Cheesecake" class="item-image" />
-                        <div class="item-details">
-                            <div class="item-content">
-                                <div class="item-info">
-                                    <h4 class="item-name">Pistachio<br/>Cheesecake</h4>
-                                    <p class="item-time">25 Nov, 15:00 pm</p>
-                                </div>
-                                <div class="item-price">
-                                    <p class="price">RM19.80</p>
-                                    <p class="items-count">2 items</p>
-                                </div>
-                            </div>
-                            <div class="item-actions">
-                                <button class="cancel-button">Cancel Order</button>
-                                <div class="quantity-control">
-                                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/362ae053f4c7d4af92fb25a096fea7ec3c539431662e1cf0cbdd3532ea15fdad?placeholderIfAbsent=true&apiKey=20e9cf7e0b154765ac7db15245f319f4" alt="" />
-                                    <div class="quantity-buttons">
-                                        <button aria-label="Decrease quantity">
-                                            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a690bb04778d77e56e114cdfeaf7d0ee428ec4ef850b70c5d2059677640ac57d?placeholderIfAbsent=true&apiKey=20e9cf7e0b154765ac7db15245f319f4" alt="" />
-                                        </button>
-                                        <span>2</span>
-                                        <button aria-label="Increase quantity">
-                                            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/c1b9e65454c45d11a46810550f6d824cece203da64691bc24de4a6e0433026cd?placeholderIfAbsent=true&apiKey=20e9cf7e0b154765ac7db15245f319f4" alt="" />
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
+                <!-- Divider -->
+                <div class="divider"></div>
 
+                <!-- Order Item 2 -->
+                <article class="order-item">
+                    <img src="crazy-shawarma.jpg" alt="Crazy Shawarma" class="item-image" />
+                    <div class="item-details">
+                        <!-- Item Content and Actions -->
+                    </div>
+                </article>
 
-                    <hr class="divider" />
+                <!-- Divider -->
+                <div class="divider"></div>
 
+                <!-- Order Summary -->
+                <section class="order-summary">
+                    <!-- Summary Rows -->
+                </section>
 
-                    <article class="order-item">
-                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/cecc03d2899506c22de373a6f11b3f622f16832f5cf612b06176592bf7229af1?placeholderIfAbsent=true&apiKey=20e9cf7e0b154765ac7db15245f319f4" alt="Crazy Shawarma" class="item-image" />
-                        <div class="item-details">
-                            <div class="item-content">
-                                <div class="item-info">
-                                    <h4 class="item-name">Crazy Shawarma</h4>
-                                    <p class="item-time">25 Nov, 12:00 pm</p>
-                                </div>
-                                <div class="item-price">
-                                    <p class="price">RM 7.00</p>
-                                    <p class="items-count">1 items</p>
-                                </div>
-                            </div>
-                            <div class="item-actions">
-                                <button class="cancel-button">Cancel Order</button>
-                                <div class="quantity-control">
-                                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/362ae053f4c7d4af92fb25a096fea7ec3c539431662e1cf0cbdd3532ea15fdad?placeholderIfAbsent=true&apiKey=20e9cf7e0b154765ac7db15245f319f4" alt="" />
-                                    <div class="quantity-buttons">
-                                        <button aria-label="Decrease quantity">
-                                            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/cb69242a339617548269042235ab8954c51994822f0b68c770493930b86f89b2?placeholderIfAbsent=true&apiKey=20e9cf7e0b154765ac7db15245f319f4" alt="" />
-                                        </button>
-                                        <span>1</span>
-                                        <button aria-label="Increase quantity">
-                                            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/0ced6eb16b2012e6d4bda066c5a650558f082f5b84b5964905727088bc280181?placeholderIfAbsent=true&apiKey=20e9cf7e0b154765ac7db15245f319f4" alt="" />
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-
-                    <hr class="divider" />
-
-
-                    <section class="summary-section">
-                        <div>
-                            <p>Subtotal</p>
-                            <p class="delivery">Delivery</p>
-                            <p class="apply-coupons">Apply Coupons</p>
-                        </div>
-                        <div>
-                            <p>RM 16.90</p>
-                            <p>RM 2.00</p>
-                            <p>-RM 0.00</p>
-                        </div>
-                    </section>
-
-
-                    <input type="text" class="coupon-input" placeholder="Enter here" aria-label="Enter coupon code" />
-
-
-                    <section class="total-section">
-                        <h3>Total</h3>
-                        <p>RM 17.90</p>
-                    </section>
-
-
-                    <button class="place-order-button">Place Order</button>
-                </main>
-            </div>
+                <!-- Place Order Button -->
+                <button class="place-order-button">Place Order</button>
+            </main>
         </section>
-
     </body>
+</html>

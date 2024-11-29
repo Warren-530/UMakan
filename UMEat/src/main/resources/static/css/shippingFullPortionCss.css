@@ -1,16 +1,14 @@
 .visually-hidden {
-  position: absolute;
-  width: 1px;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
   height: 1px;
-  padding: 0;
-  margin: -1px;
   overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
-
-.order-container {
+.order-confirmation {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -18,23 +16,14 @@
   margin: 0 auto;
 }
 
-
-.order-wrapper {
-  width: 393px;
-  display: flex;
-  flex-direction: column;
-}
-
-
 .header {
   border-radius: 20px;
-  background-color: var(--accent-red);
+  background-color: var(--pink-primary);
   width: 100%;
-  padding-top: 73px;
+  padding: 73px 0 0;
   color: var(--font-secondary);
-  font: 700 28px var(--font-family);
+  font: 700 28px League Spartan, sans-serif;
 }
-
 
 .header-content {
   display: flex;
@@ -44,42 +33,38 @@
   justify-content: space-between;
 }
 
-
 .back-arrow {
+  aspect-ratio: 0.62;
   width: 8px;
   border-radius: 10px;
   margin: auto 0;
 }
 
-
 .main-content {
-  margin-top: -34px;
+  background-color: var(--font-secondary);
+  margin-top: 24px;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 11px;
+  min-height: 73px;
 }
 
+.order-details {
+  z-index: 10;
+  margin-top: -34px;
+  width: 100%;
+  padding: 0 11px;
+}
 
 .shipping-section {
   width: 100%;
   max-width: 350px;
-  display: flex;
-  flex-direction: column;
 }
-
 
 .section-title {
-  display: flex;
-  align-items: end;
-  gap: 7px;
   color: var(--font-primary);
-  font: 700 24px/1 var(--font-family);
   text-transform: capitalize;
+  font: 700 24px/1 League Spartan, sans-serif;
   padding: 10px;
 }
-
 
 .address-container {
   position: relative;
@@ -87,26 +72,21 @@
   padding: 8px 0;
 }
 
-
 .address-background {
   border-radius: 20px;
-  background-color: var(--accent-pink);
+  background-color: var(--pink-secondary);
   min-height: 49px;
-  width: 323px;
+  width: 100%;
 }
-
 
 .address-text {
-  position: relative;
-  width: 350px;
+  position: absolute;
+  width: 100%;
   color: var(--font-primary);
-  font: 400 16px var(--font-family);
   text-transform: capitalize;
+  font: 400 16px League Spartan, sans-serif;
   padding: 20px;
-  right: 0;
-  bottom: -5px;
 }
-
 
 .order-summary-header {
   display: flex;
@@ -117,30 +97,29 @@
   margin-top: 19px;
 }
 
-
 .summary-title {
-  font: 500 20px var(--font-family);
+  font: 500 20px League Spartan, sans-serif;
   color: var(--font-primary);
+  padding: 10px;
 }
-
 
 .edit-button {
   border-radius: 19px;
-  background-color: var(--accent-pink);
-  color: var(--accent-light-brown);
-  font: 400 12px var(--font-family);
-  padding: 3px 12px;
+  background-color: var(--pink-secondary);
+  color: var(--brown-accent);
+  font: 400 12px League Spartan, sans-serif;
+  padding: 3px;
   text-align: center;
+  min-width: 58px;
 }
-
 
 .divider {
-  width: 323px;
+  width: 100%;
+  max-width: 323px;
   height: 1px;
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--orange-light);
   margin: 4px 0;
 }
-
 
 .order-item {
   display: flex;
@@ -150,59 +129,50 @@
   margin-top: 8px;
 }
 
-
 .item-image {
+  aspect-ratio: 0.67;
   width: 72px;
   margin-top: 18px;
 }
 
-
 .item-details {
-  flex: 1;
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
 }
 
-
 .item-content {
   display: flex;
   justify-content: space-between;
-  margin: 6px 11px 0;
+  margin: 6px 11px;
 }
-
 
 .item-info {
   color: var(--font-primary);
 }
 
-
-.item-name {
-  font: 500 20px var(--font-family);
+.item-title {
+  font: 500 20px League Spartan, sans-serif;
 }
-
 
 .item-time {
-  font: 300 14px var(--font-family);
+  font: 300 14px League Spartan, sans-serif;
   margin-top: 5px;
 }
-
 
 .item-price {
   text-align: right;
 }
 
-
 .price {
-  color: var(--accent-brown);
-  font: 500 20px var(--font-family);
+  color: var(--brown-light);
+  font: 500 20px League Spartan, sans-serif;
 }
-
 
 .items-count {
   color: var(--font-primary);
-  font: 300 14px var(--font-family);
+  font: 300 14px League Spartan, sans-serif;
 }
-
 
 .item-actions {
   display: flex;
@@ -210,23 +180,20 @@
   padding: 10px;
 }
 
-
 .cancel-button {
   border-radius: 100px;
-  background-color: var(--accent-pink);
-  color: var(--accent-brown);
-  font: 400 15px var(--font-family);
+  background-color: var(--pink-secondary);
+  color: var(--brown-accent);
+  font: 400 15px League Spartan, sans-serif;
   padding: 3px 12px;
 }
-
 
 .quantity-control {
   display: flex;
   gap: 5px;
-  font: 400 18px var(--font-family);
+  font: 400 18px League Spartan, sans-serif;
   color: var(--font-primary);
 }
-
 
 .quantity-buttons {
   border-radius: 14px;
@@ -234,58 +201,42 @@
   gap: 8px;
 }
 
+.quantity-button {
+  aspect-ratio: 1;
+  width: 20px;
+  border-radius: 14px;
+}
 
-.summary-section {
-  width: 100%;
-  max-width: 340px;
-  display: flex;
-  justify-content: space-between;
-  color: var(--font-primary);
-  font: 500 20px var(--font-family);
+.order-summary {
   margin-top: 17px;
-}
-
-
-.coupon-input {
-  border-radius: 100px;
-  background-color: var(--accent-pink);
-  color: rgba(175, 100, 91, 0.75);
-  font: 400 15px/1 var(--font-family);
-  padding: 3px 12px;
-  margin-top: 19px;
-}
-
-
-.total-section {
-  width: 100%;
-  max-width: 339px;
   display: flex;
   justify-content: space-between;
+  font: 500 20px League Spartan, sans-serif;
   color: var(--font-primary);
-  font: 500 20px var(--font-family);
-  margin-top: 24px;
 }
 
+.summary-row {
+  margin: 24px 0;
+}
 
 .place-order-button {
-  width: 157px;
   border-radius: 52px;
-  background-color: rgb(191, 127, 150);
+  background-color: var(--pink-dark);
   color: white;
-  font: 400 23px/1 var(--font-family);
-  text-align: center;
+  font: 400 23px League Spartan, sans-serif;
   padding: 8px;
-  margin-top: 11px;
+  text-align: center;
+  width: 157px;
+  margin-top: 11px;
 }
-
 
 :root {
   --font-primary: #391713;
   --font-secondary: #f8f8f8;
-  --accent-pink: #f3b5cc;
-  --accent-red: #f08b8d;
-  --accent-brown: #af645b;
-  --accent-light-brown: #a6594b;
-  --border-color: #ffd8c7;
-  --font-family: 'League Spartan', -apple-system, Roboto, Helvetica, sans-serif;
+  --pink-primary: #F08B8D;
+  --pink-secondary: #F3B5CC;
+  --pink-dark: #BF7F96;
+  --orange-light: #FFD8C7;
+  --brown-accent: #A6594B;
+  --brown-light: #AF645B;
 }

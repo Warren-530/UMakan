@@ -80,4 +80,35 @@ public class WebController {
     public String emptyPlate() {
         return "emptyPlate";
     }
+
+    @GetMapping("/paymentmethods")
+    public String paymentMethods() {
+        return "paymentMethods";
+    }
+
+    @GetMapping("/addcart")
+    public String addCart() {
+        return "addCart";
+    }
+
+    @GetMapping("/userdetails")
+    public String userDetails() {
+        return "userDetails";
+    }
+
+    @GetMapping("/loyaltypoint")
+    public String loyaltyPoint() {
+        return "loyaltyPoint";
+    }
+
+    @GetMapping("/qbistro")
+    public String qbistro() {
+        return "qbistro";
+    }
+
+    @GetMapping("/fkum")
+    public String fkum() {
+        return "fkum";
+    }
+
 }

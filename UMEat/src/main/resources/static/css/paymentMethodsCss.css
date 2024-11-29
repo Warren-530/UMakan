@@ -1,0 +1,217 @@
+.payment-methods-container {
+  border-radius: var(--border-radius-large);
+  background-color: var(--color-primary);
+  display: flex;
+  max-width: 393px;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.payment-methods-wrapper {
+  position: relative;
+  display: flex;
+  min-height: 852px;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 163px 34px;
+}
+
+.checkpoint {
+  z-index: 1;
+  display: flex;
+  width: 20px;
+  flex-direction: column;
+}
+
+.checkpoint-outer {
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4px 2px;
+  border: 1px solid var(--color-secondary);
+  transition: var(--transition-default);
+}
+
+.checkpoint-inner {
+  background-color: var(--color-secondary);
+  border-radius: 50%;
+  display: flex;
+  width: 100%;
+  height: 12px;
+  border: 1px solid var(--color-secondary);
+}
+
+.checkpoint-empty {
+  border-radius: 50%;
+  display: flex;
+  height: 12px;
+  border: 1px solid var(--color-secondary);
+}
+
+.checkpoint-spacing {
+  margin-top: 93px;
+}
+
+.payment-content {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  width: 393px;
+  flex-direction: column;
+  font-family: var(--font-primary);
+  right: 0;
+  bottom: 0;
+  height: 797px;
+}
+
+.payment-header {
+  border-radius: var(--border-radius-large);
+  background-color: var(--color-primary);
+  display: flex;
+  width: 100%;
+  padding-top: 77px;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.header-content {
+  align-self: flex-start;
+  display: flex;
+  margin-left: 35px;
+  gap: 40px 44px;
+  font-size: var(--font-size-large);
+  color: var(--color-text-light);
+  font-weight: 700;
+}
+
+.back-arrow {
+  aspect-ratio: 0.62;
+  object-fit: contain;
+  object-position: center;
+  width: 8px;
+  border-radius: var(--border-radius-medium);
+  align-self: flex-start;
+  margin-top: 11px;
+  cursor: pointer;
+}
+
+.payment-methods-title {
+  flex-basis: auto;
+}
+
+.payment-options {
+  background-color: var(--color-background);
+  display: flex;
+  margin-top: 27px;
+  width: 100%;
+  flex-direction: column;
+  font-size: var(--font-size-medium);
+  color: var(--color-text-primary);
+  font-weight: 400;
+  padding: 66px 34px;
+}
+
+.payment-option-row {
+  align-self: flex-start;
+  display: flex;
+  gap: 26px;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: var(--transition-default);
+}
+
+.payment-option-row:hover {
+  transform: translateX(5px);
+}
+
+.payment-icon {
+  aspect-ratio: 1.36;
+  object-fit: contain;
+  object-position: center;
+  width: 42px;
+}
+
+.add-card-button {
+  align-self: center;
+  border-radius: var(--border-radius-circle);
+  background-color: var(--color-tertiary);
+  margin-top: 23px;
+  min-height: 31px;
+  width: 116px;
+  max-width: 100%;
+  gap: 10px;
+  overflow: hidden;
+  font-size: var(--font-size-small);
+  color: var(--color-text-light);
+  text-align: center;
+  letter-spacing: -0.07px;
+  line-height: 1;
+  padding: 6px 12px;
+  cursor: pointer;
+  border: none;
+  transition: var(--transition-default);
+}
+
+.add-card-button:hover {
+  background-color: var(--color-secondary);
+  transform: scale(1.05);
+}
+
+.add-card-button:focus {
+  outline: 2px solid var(--color-secondary);
+  outline-offset: 2px;
+}
+
+.divider {
+  margin-top: 23px;
+  width: 323px;
+  max-width: 100%;
+  height: 1px;
+  border: none;
+  background-color: var(--color-divider-primary);
+}
+
+.divider-alt {
+  background-color: var(--color-divider-secondary);
+}
+
+.payment-text {
+  margin: auto 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+:root {
+  --font-primary: 'League Spartan', sans-serif;
+  --color-primary: rgba(240, 139, 141, 1);
+  --color-secondary: rgba(189, 79, 118, 1);
+  --color-tertiary: rgba(191, 127, 150, 1);
+  --color-background: rgba(248, 248, 248, 1);
+  --color-divider-primary: rgba(235, 163, 184, 1);
+  --color-divider-secondary: rgba(255, 216, 199, 1);
+  --color-text-primary: #391713;
+  --color-text-light: #f8f8f8;
+  --border-radius-large: 20px;
+  --border-radius-medium: 10px;
+  --border-radius-circle: 100px;
+  --spacing-small: 8px;
+  --spacing-medium: 16px;
+  --spacing-large: 24px;
+  --spacing-xlarge: 32px;
+  --font-size-small: 15px;
+  --font-size-medium: 20px;
+  --font-size-large: 28px;
+  --transition-default: all 0.3s ease;
+}
