@@ -1,0 +1,284 @@
+.payment-container {
+  display: flex;
+  max-width: 480px;
+  width: 100%;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+
+.payment-wrapper {
+  align-items: center;
+  border-radius: 20px;
+  background: var(--font-secondary);
+  display: flex;
+  min-height: 852px;
+  overflow: hidden;
+  justify-content: start;
+}
+
+
+.payment-content {
+  border-radius: 20px;
+  background-color: #f08b8d;
+  display: flex;
+  width: 100%;
+  padding: 73px 0 0;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+
+.payment-title {
+  color: var(--font-secondary);
+  align-self: center;
+  font: 700 28px League Spartan, sans-serif;
+}
+
+
+.payment-details {
+  border-radius: 0;
+  background-color: var(--font-secondary);
+  display: flex;
+  margin-top: 30px;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding: 39px 32px 70px 10px;
+}
+
+
+.address-section {
+  display: flex;
+  width: 100%;
+  padding-left: 24px;
+  flex-direction: column;
+  font-family: League Spartan, sans-serif;
+}
+
+
+.address-header {
+  display: flex;
+  margin-left: 12px;
+  gap: 35px;
+  font: 700 24px League Spartan, sans-serif;
+  color: var(--font-primary);
+  text-transform: capitalize;
+  line-height: 1;
+}
+
+
+.card-icon {
+  width: 69.22px;
+  height: 47.37px;
+  flex-shrink: 0;
+}
+
+
+.address-text {
+  border-radius: 20px;
+  background-color: var(--accent-pink);
+  margin-top: 11px;
+  font: 400 16px League Spartan, sans-serif;
+  color: var(--font-primary);
+  text-transform: capitalize;
+  padding: 3px 15px;
+}
+
+
+.order-container {
+  display: flex;
+  margin-top: 41px;
+  width: 100%;
+  align-items: start;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+
+.order-details {
+  display: flex;
+  gap: 5px;
+}
+
+
+.order-summary {
+  display: flex;
+  flex-direction: column;
+  color: var(--font-primary);
+}
+
+
+.summary-title {
+  font: 500 20px League Spartan, sans-serif;
+}
+
+
+.item-name {
+  font: 300 14px League Spartan, sans-serif;
+  line-height: 1;
+  margin-top: 11px;
+}
+
+
+.item-count {
+  color: var(--accent-brown);
+  font: 300 14px League Spartan, sans-serif;
+  line-height: 1;
+  align-self: end;
+  margin-top: 29px;
+}
+
+
+.price-section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+.edit-button {
+  align-self: start;
+  width: 52px;
+  border-radius: 19px;
+  background-color: var(--accent-pink);
+  margin-left: 17px;
+  min-height: 14px;
+  font: 400 12px League Spartan, sans-serif;
+  color: var(--accent-brown);
+  white-space: nowrap;
+  letter-spacing: -0.06px;
+  line-height: 1;
+  padding: 3px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.price-amount {
+  color: var(--font-primary);
+  font: 500 20px League Spartan, sans-serif;
+  margin-top: 15px;
+}
+
+
+.divider {
+  width: 323px;
+  max-width: 100%;
+  height: 1px;
+  border: 1px solid var(--border-color);
+  margin: 16px 0;
+}
+
+
+.payment-method-section {
+  display: flex;
+  margin-top: 26px;
+  gap: 26px;
+}
+
+
+.method-details {
+  display: flex;
+  flex-direction: column;
+  color: var(--font-primary);
+  flex: 1;
+}
+
+
+.method-title {
+  font: 500 20px League Spartan, sans-serif;
+}
+
+
+.card-info {
+  display: flex;
+  margin-top: 5px;
+  gap: 8px;
+  font: 300 14px League Spartan, sans-serif;
+  line-height: 1;
+}
+
+
+.card-number {
+  border-radius: 10px;
+  background-color: var(--bg-pink-light);
+  margin-top: 13px;
+  font: 300 14px League Spartan, sans-serif;
+  color: var(--font-primary);
+  line-height: 1;
+  padding: 3px 10px;
+}
+
+
+.delivery-section {
+  display: flex;
+  margin-top: 28px;
+  align-items: flex-start;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+
+.delivery-info {
+  display: flex;
+  flex-direction: column;
+  color: var(--font-primary);
+}
+
+
+.delivery-time {
+  font: 500 20px League Spartan, sans-serif;
+}
+
+
+.estimated-text {
+  font: 300 14px League Spartan, sans-serif;
+  line-height: 1;
+  margin-top: 14px;
+}
+
+
+.time-estimate {
+  color: var(--accent-brown);
+  font: 500 20px League Spartan, sans-serif;
+  align-self: end;
+  margin-top: 30px;
+}
+
+
+.earth-section {
+  color: var(--font-primary);
+  font: 500 20px League Spartan, sans-serif;
+  align-self: start;
+  margin-top: 25px;
+}
+
+
+.action-button {
+  align-self: stretch;
+  width: 157px;
+  border-radius: 52px;
+  background-color: var(--accent-rose);
+  min-height: 38px;
+  max-width: 100%;
+  color: #fff;
+  text-align: center;
+  letter-spacing: -0.12px;
+  padding: 8px;
+  font: 400 23px/1 League Spartan, sans-serif;
+  border: none;
+  cursor: pointer;
+}
+
+
+:root {
+  --font-primary: #391713;
+  --font-secondary: #f8f8f8;
+  --accent-pink: #f3b5cc;
+  --accent-brown: #a6594b;
+  --accent-rose: #bf7f96;
+  --border-color: #ffd8c7;
+  --bg-pink-light: #fcddec;
+  --card-orange: #E95322;
+}

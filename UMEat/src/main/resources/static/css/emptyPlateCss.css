@@ -1,0 +1,126 @@
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+
+.empty-plate-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  justify-content: start;
+  margin: 0 auto;
+}
+
+
+.event-wrapper {
+  border-radius: 20px;
+  width: 409px;
+  margin: auto 0;
+}
+
+
+.event-header {
+  border-radius: 20px;
+  background-color: var(--color-primary);
+  display: flex;
+  padding: 26px 0 15px;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+}
+
+
+.event-title {
+  color: var(--color-secondary);
+  font-size: 28px;
+}
+
+
+.event-subtitle {
+  color: var(--color-accent);
+  font-size: 19px;
+  line-height: 26px;
+  margin-top: 24px;
+  width: 300px;
+  text-align: center;
+}
+
+
+.event-content {
+  background-color: var(--color-secondary);
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  color: var(--color-text);
+  padding: 28px 11px 53px;
+}
+
+
+.upload-instruction {
+  line-height: 2;
+  text-transform: capitalize;
+  margin-left: 22px;
+}
+
+
+.upload-area {
+  aspect-ratio: 2.99;
+  width: 100%;
+  border-radius: 39px;
+  margin-top: 18px;
+}
+
+
+.submit-button {
+  background-color: var(--color-button);
+  font-size: 25px;
+  color: #000;
+  margin: 6px 0 0 30px;
+  padding: 7px 24px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.rules-title {
+  line-height: 2;
+  text-transform: capitalize;
+  margin: 16px 0 0 16px;
+}
+
+
+.rules-list {
+  color: var(--color-text-accent);
+  font-weight: 300;
+  line-height: 20px;
+  margin: 16px 30px 0 0;
+}
+
+
+.rules-highlight {
+  font-weight: 400;
+}
+
+
+.rules-emphasis {
+  font-weight: 300;
+}
+
+
+:root {
+  --font-primary: 'League Spartan', sans-serif;
+  --color-primary: #F08B8D;
+  --color-secondary: #F8F8F8;
+  --color-accent: #FBFF07;
+  --color-text: #391713;
+  --color-text-accent: #A44C41;
+  --color-button: #F6B5B5;
+}

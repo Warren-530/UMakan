@@ -1,3 +1,15 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+
 .order-container {
   display: flex;
   align-items: center;
@@ -8,26 +20,19 @@
 
 
 .order-wrapper {
-  border-radius: 0;
-  align-self: stretch;
-  display: flex;
   width: 393px;
-  padding-top: 6px;
+  display: flex;
   flex-direction: column;
-  margin: auto 0;
 }
 
 
-.header-section {
+.header {
   border-radius: 20px;
-  background-color: var(--accent-pink);
-  display: flex;
+  background-color: var(--accent-red);
   width: 100%;
   padding-top: 73px;
-  flex-direction: column;
-  overflow: hidden;
   color: var(--font-secondary);
-  font: 700 28px League Spartan, sans-serif;
+  font: 700 28px var(--font-family);
 }
 
 
@@ -35,100 +40,252 @@
   display: flex;
   margin-left: 35px;
   width: 254px;
-  max-width: 100%;
   gap: 20px;
   justify-content: space-between;
 }
 
 
 .back-arrow {
-  aspect-ratio: 0.62;
-  object-fit: contain;
-  object-position: center;
   width: 8px;
   border-radius: 10px;
   margin: auto 0;
 }
 
 
-.white-section {
-  border-radius: 0;
-  background-color: var(--font-secondary);
-  display: flex;
-  min-height: 73px;
-  margin-top: 24px;
-  width: 100%;
-}
-
-
 .main-content {
-  z-index: 10;
-  display: flex;
   margin-top: -34px;
   width: 100%;
+  display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0 11px;
 }
 
 
-.shipping-container {
-  align-self: end;
-  display: flex;
+.shipping-section {
   width: 100%;
   max-width: 350px;
+  display: flex;
   flex-direction: column;
-  justify-content: start;
 }
 
 
-.shipping-header {
+.section-title {
   display: flex;
-  width: 223px;
-  max-width: 100%;
-  flex-direction: column;
-  color: var(--font-primary);
-  text-transform: capitalize;
-  justify-content: center;
-  padding: 10px;
-  font: 700 24px/1 League Spartan, -apple-system, Roboto, Helvetica, sans-serif;
-}
-
-
-.shipping-title-wrapper {
-  display: flex;
-  width: 100%;
   align-items: end;
   gap: 7px;
-  justify-content: start;
+  color: var(--font-primary);
+  font: 700 24px/1 var(--font-family);
+  text-transform: capitalize;
+  padding: 10px;
 }
 
 
-.shipping-title {
-  width: 186px;
+.address-container {
+  position: relative;
+  width: 100%;
+  padding: 8px 0;
 }
 
 
-.shipping-icon {
-  aspect-ratio: 0.91;
-  object-fit: contain;
-  object-position: center;
-  width: 10px;
+.address-background {
+  border-radius: 20px;
+  background-color: var(--accent-pink);
+  min-height: 49px;
+  width: 323px;
 }
 
 
-/* Continue with rest of CSS converted from original, maintaining all styles but using semantic class names */
+.address-text {
+  position: relative;
+  width: 350px;
+  color: var(--font-primary);
+  font: 400 16px var(--font-family);
+  text-transform: capitalize;
+  padding: 20px;
+  right: 0;
+  bottom: -5px;
+}
+
+
+.order-summary-header {
+  display: flex;
+  width: 100%;
+  max-width: 334px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 19px;
+}
+
+
+.summary-title {
+  font: 500 20px var(--font-family);
+  color: var(--font-primary);
+}
+
+
+.edit-button {
+  border-radius: 19px;
+  background-color: var(--accent-pink);
+  color: var(--accent-light-brown);
+  font: 400 12px var(--font-family);
+  padding: 3px 12px;
+  text-align: center;
+}
+
+
+.divider {
+  width: 323px;
+  height: 1px;
+  border: 1px solid var(--border-color);
+  margin: 4px 0;
+}
+
+
+.order-item {
+  display: flex;
+  width: 100%;
+  max-width: 337px;
+  gap: 2px;
+  margin-top: 8px;
+}
+
+
+.item-image {
+  width: 72px;
+  margin-top: 18px;
+}
+
+
+.item-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.item-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 6px 11px 0;
+}
+
+
+.item-info {
+  color: var(--font-primary);
+}
+
+
+.item-name {
+  font: 500 20px var(--font-family);
+}
+
+
+.item-time {
+  font: 300 14px var(--font-family);
+  margin-top: 5px;
+}
+
+
+.item-price {
+  text-align: right;
+}
+
+
+.price {
+  color: var(--accent-brown);
+  font: 500 20px var(--font-family);
+}
+
+
+.items-count {
+  color: var(--font-primary);
+  font: 300 14px var(--font-family);
+}
+
+
+.item-actions {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+
+.cancel-button {
+  border-radius: 100px;
+  background-color: var(--accent-pink);
+  color: var(--accent-brown);
+  font: 400 15px var(--font-family);
+  padding: 3px 12px;
+}
+
+
+.quantity-control {
+  display: flex;
+  gap: 5px;
+  font: 400 18px var(--font-family);
+  color: var(--font-primary);
+}
+
+
+.quantity-buttons {
+  border-radius: 14px;
+  display: flex;
+  gap: 8px;
+}
+
+
+.summary-section {
+  width: 100%;
+  max-width: 340px;
+  display: flex;
+  justify-content: space-between;
+  color: var(--font-primary);
+  font: 500 20px var(--font-family);
+  margin-top: 17px;
+}
+
+
+.coupon-input {
+  border-radius: 100px;
+  background-color: var(--accent-pink);
+  color: rgba(175, 100, 91, 0.75);
+  font: 400 15px/1 var(--font-family);
+  padding: 3px 12px;
+  margin-top: 19px;
+}
+
+
+.total-section {
+  width: 100%;
+  max-width: 339px;
+  display: flex;
+  justify-content: space-between;
+  color: var(--font-primary);
+  font: 500 20px var(--font-family);
+  margin-top: 24px;
+}
+
+
+.place-order-button {
+  width: 157px;
+  border-radius: 52px;
+  background-color: rgb(191, 127, 150);
+  color: white;
+  font: 400 23px/1 var(--font-family);
+  text-align: center;
+  padding: 8px;
+  margin-top: 11px;
+}
+
 
 :root {
   --font-primary: #391713;
   --font-secondary: #f8f8f8;
-  --accent-pink: #f08b8d;
-  --accent-light-pink: #f3b5cc;
-  --accent-brown: #a6594b;
-  --accent-dark-brown: #af645b;
+  --accent-pink: #f3b5cc;
+  --accent-red: #f08b8d;
+  --accent-brown: #af645b;
+  --accent-light-brown: #a6594b;
   --border-color: #ffd8c7;
-  --progress-bg: #d9d9d9;
-  --progress-fill: #bd4872;
-  --progress-border: #e9f6fe;
-  --button-bg: #bf7f96;
+  --font-family: 'League Spartan', -apple-system, Roboto, Helvetica, sans-serif;
 }

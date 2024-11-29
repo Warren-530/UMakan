@@ -44,15 +44,40 @@ public class WebController {
     @GetMapping("/orderselection")
     public String orderSelection() {
         return "orderSelection";
-    }
+    }//x
 
     @GetMapping("/shippingfullportion")
     public String shippingFullPortion() {
         return "shippingFullPortion";
-    }
+    }//x
 
     @GetMapping("/pickupfullportion")
     public String pickupFullPortion() {
         return "pickupFullPortion";
+    }
+
+    @GetMapping("/pickuphalfportion")
+    public String pickupHalfPortion() {
+        return "pickupHalfPortion";
+    }//x
+
+    @GetMapping("/orderconfirmed")
+    public String orderConfirmed() {
+        return "orderConfirmed";
+    }
+
+    @GetMapping("/ordercancelled")
+    public String orderCancelled() {
+        return "orderCancelled";
+    }//x
+
+    @GetMapping("/reasoncancel")
+    public String reasonCancel() {
+        return "reasonCancel";
+    }
+
+    @GetMapping("/emptyplate")
+    public String emptyPlate() {
+        return "emptyPlate";
     }
 }
