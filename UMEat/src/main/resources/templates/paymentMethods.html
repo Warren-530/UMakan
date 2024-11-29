@@ -8,74 +8,45 @@
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main>
-        <div class="payment-methods-container">
-            <div class="payment-methods-wrapper">
-                <div class="checkpoint">
-                    <div class="checkpoint-outer">
-                        <div class="checkpoint-inner"></div>
+    <div class="payment-container">
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/6b5b8dddb00bc40219643e888b18307d55a612c4390e59e8e48b526d6b211777?placeholderIfAbsent=true&apiKey=d0bcfac6773b422b93b43786ecb1116f" class="payment-icon" alt="" />
+        <section class="payment-section" aria-labelledby="payment-title">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/9b01a39f447f0383f1b1baaa147f0bc8184f3556ba3a425cf8460916cbe1c185?placeholderIfAbsent=true&apiKey=d0bcfac6773b422b93b43786ecb1116f" class="payment-icon" alt="" />
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/9b01a39f447f0383f1b1baaa147f0bc8184f3556ba3a425cf8460916cbe1c185?placeholderIfAbsent=true&apiKey=d0bcfac6773b422b93b43786ecb1116f" class="payment-icon" alt="" />
+            <div class="payment-wrapper">
+                <h2 id="payment-title" class="payment-title">Payment Methods</h2>
+                <div class="payment-methods-list" role="list">
+                    <div class="payment-method-item" role="listitem">
+                        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/73f7459a7cf981f33c676faaee5a57214173699e7c3c0cb0a55c2e01f9afac2f?placeholderIfAbsent=true&apiKey=d0bcfac6773b422b93b43786ecb1116f" class="method-icon" alt="Credit card icon" />
+                        <span>*** *** *** 43</span>
                     </div>
-                </div>
-                <div class="checkpoint checkpoint-spacing">
-                    <div class="checkpoint-outer">
-                        <div class="checkpoint-empty"></div>
+                    <button class="add-card-button" type="button" aria-label="Add new payment card">
+                        Add New Card
+                    </button>
+                    <hr class="divider" aria-hidden="true" />
+                    <div class="payment-method-item" role="listitem">
+                        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/2e6c7f80054903673dcc6e1f960c8963c5575643d9d8edbd1fa927996af9560e?placeholderIfAbsent=true&apiKey=d0bcfac6773b422b93b43786ecb1116f" class="method-icon" alt="Apple Pay icon" />
+                        <span>Apple Pay</span>
                     </div>
-                </div>
-                <div class="checkpoint checkpoint-spacing">
-                    <div class="checkpoint-outer">
-                        <div class="checkpoint-empty"></div>
+                    <hr class="divider" aria-hidden="true" />
+                    <div class="payment-method-item" role="listitem">
+                        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/a6d8d98df95eb2eeaab9108a05af2c7224332f62a0e3daa7e782af76fef7f1c5?placeholderIfAbsent=true&apiKey=d0bcfac6773b422b93b43786ecb1116f" class="method-icon" alt="PayPal icon" />
+                        <span>PayPal</span>
                     </div>
-                </div>
-                <div class="checkpoint checkpoint-spacing">
-                    <div class="checkpoint-outer">
-                        <div class="checkpoint-empty"></div>
+                    <hr class="divider" aria-hidden="true" />
+                    <div class="payment-method-item" role="listitem">
+                        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/65f4d8de15febfea6d4ad932d2bd4d12bdd9a0515eba70fb10c44ca1396ede60?placeholderIfAbsent=true&apiKey=d0bcfac6773b422b93b43786ecb1116f" class="method-icon" alt="Google Pay icon" />
+                        <span>Google Pay</span>
                     </div>
-                </div>
-                <div class="checkpoint checkpoint-spacing">
-                    <div class="checkpoint-outer">
-                        <div class="checkpoint-empty"></div>
+                    <hr class="divider" aria-hidden="true" />
+                    <div class="payment-method-item" role="listitem">
+                        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/f78dc75b98d760a2078aceb3b8f1d02811454333292267e064cca423340b3e1e?placeholderIfAbsent=true&apiKey=d0bcfac6773b422b93b43786ecb1116f" class="method-icon" alt="Cash payment icon" />
+                        <span>Cash</span>
                     </div>
-                </div>
-                <div class="payment-content">
-                    <div class="payment-header">
-                        <div class="header-content">
-                            <button class="back-arrow" aria-label="Go back">
-                                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/d93abad1511d9703a35a953636948e7e4ceed897573aba6cf12d87e4382ba16c?placeholderIfAbsent=true&apiKey=d0bcfac6773b422b93b43786ecb1116f" alt="" role="presentation">
-                            </button>
-                            <h1 class="payment-methods-title">Payment Methods</h1>
-                        </div>
-                        <div class="payment-options">
-                            <div class="payment-option-row" role="button" tabindex="0">
-                                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/533d40cf80b4d71149de78fe236269ec603aeb7e52032e0d2dd73c6985ab9aa5?placeholderIfAbsent=true&apiKey=d0bcfac6773b422b93b43786ecb1116f" alt="Credit Card" class="payment-icon">
-                                <div class="payment-text">*** *** *** 43</div>
-                            </div>
-                            <button class="add-card-button">Add New Card</button>
-                            <hr class="divider">
-                            <div class="payment-option-row" role="button" tabindex="0">
-                                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/60e20efb4fb4a9ec37e30721d57ff342b75891053298eab24f953b859014b80f?placeholderIfAbsent=true&apiKey=d0bcfac6773b422b93b43786ecb1116f" alt="Apple Pay" class="payment-icon">
-                                <div class="payment-text">Apple Pay</div>
-                            </div>
-                            <hr class="divider">
-                            <div class="payment-option-row" role="button" tabindex="0">
-                                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/45879b8018d767ad1832e766564c312b7be8fc3353cbaa59299182da04629670?placeholderIfAbsent=true&apiKey=d0bcfac6773b422b93b43786ecb1116f" alt="PayPal" class="payment-icon">
-                                <div class="payment-text">PayPal</div>
-                            </div>
-                            <hr class="divider">
-                            <div class="payment-option-row" role="button" tabindex="0">
-                                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/43c53fddaa98a6e4284c40079445ad505d2a64623044bf9ed07ef651ab56eb50?placeholderIfAbsent=true&apiKey=d0bcfac6773b422b93b43786ecb1116f" alt="Google Pay" class="payment-icon">
-                                <div class="payment-text">Google Pay</div>
-                            </div>
-                            <hr class="divider divider-alt">
-                            <div class="payment-option-row" role="button" tabindex="0">
-                                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/86f0475e2fbbc193f7c10add525dc46c46662b7b40f06ee0b16d4d48c2fe9623?placeholderIfAbsent=true&apiKey=d0bcfac6773b422b93b43786ecb1116f" alt="Cash" class="payment-icon">
-                                <div class="payment-text">Cash</div>
-                            </div>
-                            <hr class="divider divider-alt">
-                        </div>
-                    </div>
+                    <hr class="divider" aria-hidden="true" />
                 </div>
             </div>
-        </div>
-    </main>
+        </section>
+    </div>
 </body>
 </html>

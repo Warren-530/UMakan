@@ -86,9 +86,9 @@ public class WebController {
         return "paymentMethods";
     }
 
-    @GetMapping("/addcart")
-    public String addCart() {
-        return "addCart";
+    @GetMapping("/addcard")
+    public String addCard() {
+        return "addCard";
     }
 
     @GetMapping("/userdetails")
@@ -109,6 +109,11 @@ public class WebController {
     @GetMapping("/fkum")
     public String fkum() {
         return "fkum";
+    }
+
+    @GetMapping("/deliverytime")
+    public String deliveryTime() {
+        return "deliveryTime";
     }
 
 }
