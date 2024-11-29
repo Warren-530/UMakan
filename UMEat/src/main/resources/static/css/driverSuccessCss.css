@@ -1,0 +1,156 @@
+:root {
+    --primary-color: rgba(143, 51, 20, 1);
+    --text-light: rgba(245, 244, 211, 1);
+    --text-dark: rgba(59, 39, 39, 1);
+    --background: pink;
+    --content-bg: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--content-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px; 
+
+.content-wrapper {
+    background-color: var(--background);
+    max-width: 440px;
+    width: 100%;
+    border-radius: 16px;
+    padding: 80px;
+}
+
+.container {
+    width: 100%;
+    text-align: center;
+}
+
+.header-section {
+    padding: 0 16px;
+}
+
+.back-nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.back-icon {
+    width: 39px;
+    height: 39px;
+}
+
+.back-button {
+    background: none;
+    border: none;
+    color: var(--text-dark);
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.back-button:focus {
+    outline: 2px solid #4A90E2;
+    border-radius: 4px;
+}
+
+.success-image {
+    margin: 40px auto 20px;
+    width: 222px;
+    height: auto;
+}
+
+.success-message {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.start-delivery-button {
+    margin-top: 20px;
+    padding: 15px 20px;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 33px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.start-delivery-button:hover {
+    background-color: rgba(123, 31, 0, 1);
+}
+
+.support-section {
+    margin-top: 40px;
+}
+
+.support-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.support-image {
+    width: 120px;
+    height: auto;
+}
+
+.contact-info {
+    text-align: left;
+}
+
+.contact-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.underline {
+    width: 30px;
+    height: 3px;
+    background-color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.phone-number {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.phone-number:hover {
+    text-decoration: underline;
+}
+
+.hours {
+    font-size: 14px;
+    color: var(--text-dark);
+    margin-top: 10px;
+}
+
+
+@media (max-width: 480px) {
+    .support-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+}

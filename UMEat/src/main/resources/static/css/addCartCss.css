@@ -1,0 +1,271 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.cart-container {
+    position: relative;
+    display: flex;
+    max-width: 480px;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 0 auto;
+    padding: 259px 67px 594px;
+}
+
+.cart-wrapper {
+    border-radius: 0;
+    position: absolute;
+    z-index: 0;
+    display: flex;
+    width: 393px;
+    padding-bottom: 7px;
+    flex-direction: column;
+    right: 0;
+    bottom: 0;
+    height: 856px;
+}
+
+.cart-header {
+    border-radius: 20px;
+    background-color: var(--primary-color);
+    display: flex;
+    width: 100%;
+    padding-top: 131px;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.cart-content {
+    border-radius: 0;
+    background-color: var(--background-color);
+    z-index: 10;
+    display: flex;
+    min-height: 725px;
+    margin-bottom: -7px;
+    width: 100%;
+}
+
+.back-icon {
+    aspect-ratio: 1.67;
+    object-fit: contain;
+    object-position: center;
+    width: 5px;
+    z-index: 0;
+}
+
+.cart-title-section {
+    position: absolute;
+    z-index: 0;
+    display: flex;
+    width: 278px;
+    max-width: 278px;
+    flex-direction: column;
+    right: 57px;
+    top: 18px;
+    height: 113px;
+    padding: 0 19px 10px;
+}
+
+.cart-heading {
+    align-self: flex-end;
+    display: flex;
+    margin-right: 26px;
+    gap: 11px;
+    font-size: 28px;
+    color: #f8f8f8;
+    font-weight: 700;
+}
+
+.cart-title {
+    flex-grow: 1;
+    margin: auto 0;
+}
+
+.cart-icon {
+    aspect-ratio: 0.98;
+    object-fit: contain;
+    object-position: center;
+    width: 40px;
+}
+
+.cart-items-count {
+    color: #000;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 48px;
+}
+
+.cart-summary {
+    border-radius: 0;
+    position: absolute;
+    z-index: 0;
+    display: flex;
+    max-width: 100%;
+    width: 274px;
+    gap: 40px 100px;
+    color: var(--text-color);
+    left: 50px;
+    bottom: 315px;
+    height: 103px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.summary-labels, .summary-values {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.summary-labels {
+    white-space: nowrap;
+}
+
+.delivery-label, .delivery-value {
+    margin-top: 38px;
+}
+
+.total-label, .total-value {
+    margin-top: 11px;
+}
+
+.cart-item {
+    border-radius: 0;
+    position: absolute;
+    z-index: 0;
+    display: flex;
+    width: 263px;
+    max-width: 263px;
+    gap: 20px;
+    left: 58px;
+    top: 186px;
+    height: 80px;
+}
+
+.item-details {
+    display: flex;
+    gap: 5px;
+}
+
+.item-image {
+    aspect-ratio: 1.01;
+    object-fit: contain;
+    object-position: center;
+    width: 81px;
+    border-radius: 20px;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+}
+
+.item-name {
+    color: var(--text-color);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0.45px;
+}
+
+.item-price {
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1;
+    align-self: flex-start;
+}
+
+.item-quantity {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    color: var(--text-color);
+    white-space: nowrap;
+    margin: auto 0;
+}
+
+.quantity-controls {
+    border-radius: 10px;
+    align-self: flex-start;
+    display: flex;
+    margin-top: 9px;
+    gap: 5px;
+    overflow: hidden;
+    font-weight: 400;
+    text-align: center;
+}
+
+.quantity-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quantity-button img {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 14px;
+    border-radius: 10px;
+}
+
+.divider {
+    position: absolute;
+    z-index: 0;
+    width: 259px;
+    left: 62px;
+    top: 322px;
+    height: 1px;
+    border: 1px solid var(--border-color);
+}
+
+.back-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    position: absolute;
+    z-index: 0;
+    left: 30px;
+    top: 29px;
+}
+
+.back-button img {
+    aspect-ratio: 0.62;
+    object-fit: contain;
+    object-position: center;
+    width: 8px;
+    border-radius: 10px;
+    height: 13px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+@media (hover: hover) {
+    .quantity-button:hover {
+        opacity: 0.8;
+    }
+
+:root {
+    --primary-color: rgba(240, 139, 141, 1);
+    --background-color: rgba(248, 248, 248, 1);
+    --text-color: rgba(24, 28, 46, 1);
+    --border-color: rgba(239, 91, 91, 1);
+}
+

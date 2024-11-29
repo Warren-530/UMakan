@@ -116,4 +116,14 @@ public class WebController {
         return "deliveryTime";
     }
 
+    @GetMapping("/driversuccess")
+    public String driverSuccess() {
+        return "driverSuccess";
+    }
+
+    @GetMapping("/addcart")
+    public String addCart() {
+        return "addCart";
+    }
+
 }
