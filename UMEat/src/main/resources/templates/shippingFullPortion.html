@@ -1,128 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Order confirmation page for your food delivery">
-    <title>Shipping Full Portion</title>
-    <link rel="stylesheet" href="/css/shippingFullPortionCss.css">
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <main>
-        <section class="order-confirmation" aria-label="Order confirmation details">
-            <div class="confirmation-header">
-                <button class="back-button" aria-label="Go back to previous page">
-                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/f4929e46de36f36c51b0041ba90305025f1da358db292dfda5a0587c459533ef?placeholderIfAbsent=true&apiKey=d0bcfac6773b422b93b43786ecb1116f" alt="" class="back-icon" width="8" height="13" />
-                </button>
-                <h1 class="header-title">Confirm Order</h1>
-            </div>
-
-            <div class="shipping-section">
-                <div class="section-header">
-                    <h2 class="section-title">Shipping Address</h2>
-                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/e60271bd03916fd2419f8ec4c7d7d174f2329f95429b51eac4d8f2e219835de5?placeholderIfAbsent=true&apiKey=d0bcfac6773b422b93b43786ecb1116f" alt="" class="chevron-icon" width="10" height="11" />
-                </div>
-                
-                <div class="address-container">
-                    <address class="address-text">
-                        Universiti Malaya, 50603 Kuala Lumpur, Federal Territory of Kuala Lumpur
-                    </address>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Order confirmation page for your food delivery">
+        <title>Shipping Full Portion</title>
+        <link rel="stylesheet" href="/css/shippingFullPortionCss.css">
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <section class="order-confirmation" aria-label="Order confirmation details">
+                <div class="confirmation-header">
+                    <button class="back-button" aria-label="Go back to previous page">
+                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/f4929e46de36f36c51b0041ba90305025f1da358db292dfda5a0587c459533ef?placeholderIfAbsent=true&apiKey=d0bcfac6773b422b93b43786ecb1116f" alt="" class="back-icon" width="8" height="13" />
+                    </button>
+                    <h1 class="header-title">Confirm Order</h1>
                 </div>
 
-                <div class="summary-header">
-                    <h2 class="summary-title">Order Summary</h2>
-                    <button class="edit-button" aria-label="Edit order">Edit</button>
-                </div>
+                <div class="shipping-section">
+                    <div class="section-header">
+                        <h2 class="section-title">Shipping Address</h2>
+                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/e60271bd03916fd2419f8ec4c7d7d174f2329f95429b51eac4d8f2e219835de5?placeholderIfAbsent=true&apiKey=d0bcfac6773b422b93b43786ecb1116f" alt="" class="chevron-icon" width="10" height="11" />
+                    </div>
 
-                <div class="order-items">
-                    <article class="order-item">
-                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/06fea39929f5821bab36b6f506a82fdb15d8aebd0cafb40e45d178706483e2dd?placeholderIfAbsent=true&apiKey=d0bcfac6773b422b93b43786ecb1116f" alt="Pistachio Cheesecake" class="item-image" width="72" height="108" />
-                        <div class="item-details">
-                            <div class="item-header">
-                                <div class="item-info">
-                                    <h3 class="item-name">Pistachio Cheesecake</h3>
-                                    <time class="item-time" datetime="2023-11-25T15:00">25 Nov, 15:00 pm</time>
+                    <div class="address-container">
+                        <address class="address-text">
+                            KK8,Universiti Malaya, 50603 Kuala Lumpur, Federal Territory of Kuala Lumpur
+                        </address>
+                    </div>
+
+                    <div class="summary-header">
+                        <h2 class="summary-title">Order Summary</h2>
+                        <button class="edit-button" aria-label="Edit order">Edit</button>
+                    </div>
+
+                    <div class="order-items">
+                        <article class="order-item">
+                            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/06fea39929f5821bab36b6f506a82fdb15d8aebd0cafb40e45d178706483e2dd?placeholderIfAbsent=true&apiKey=d0bcfac6773b422b93b43786ecb1116f" alt="Pistachio Cheesecake" class="item-image" width="72" height="108" />
+                            <div class="item-details">
+                                <div class="item-header">
+                                    <div class="item-info">
+                                        <h3 class="item-name">Pistachio Cheesecake</h3>
+                                        <time class="item-time" datetime="2023-11-25T15:00">25 Nov, 15:00 pm</time>
+                                    </div>
+                                    <div class="price-info">
+                                        <p class="item-price">RM19.80</p>
+                                        <p class="item-quantity">2 items</p>
+                                    </div>
                                 </div>
-                                <div class="price-info">
-                                    <p class="item-price">RM19.80</p>
-                                    <p class="item-quantity">2 items</p>
+                                <div class="item-actions">
+                                    <button class="cancel-button" aria-label="Cancel Pistachio Cheesecake order">Cancel Order</button>
+                                    <div class="quantity-control" role="group" aria-label="Item quantity controls">
+                                        <button class="quantity-btn decrease" aria-label="Decrease quantity">-</button>
+                                        <span class="quantity-display" aria-live="polite">2</span>
+                                        <button class="quantity-btn increase" aria-label="Increase quantity">+</button>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="item-actions">
-                                <button class="cancel-button" aria-label="Cancel Pistachio Cheesecake order">Cancel Order</button>
-                                <div class="quantity-control" role="group" aria-label="Item quantity controls">
-                                    <button class="quantity-btn decrease" aria-label="Decrease quantity">-</button>
-                                    <span class="quantity-display" aria-live="polite">2</span>
-                                    <button class="quantity-btn increase" aria-label="Increase quantity">+</button>
+                        </article>
+
+                        <article class="order-item">
+                            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/cecc03d2899506c22de373a6f11b3f622f16832f5cf612b06176592bf7229af1?placeholderIfAbsent=true&apiKey=d0bcfac6773b422b93b43786ecb1116f" alt="Crazy Shawarma" class="item-image" width="72" height="108" />
+                            <div class="item-details">
+                                <div class="item-header">
+                                    <div class="item-info">
+                                        <h3 class="item-name">Crazy Shawarma</h3>
+                                        <time class="item-time" datetime="2023-11-25T12:00">25 Nov, 12:00 pm</time>
+                                    </div>
+                                    <div class="price-info">
+                                        <p class="item-price">RM7.00</p>
+                                        <p class="item-quantity">1 item</p>
+                                    </div>
+                                </div>
+                                <div class="item-actions">
+                                    <button class="cancel-button" aria-label="Cancel Crazy Shawarma order">Cancel Order</button>
+                                    <div class="quantity-control" role="group" aria-label="Item quantity controls">
+                                        <button class="quantity-btn decrease" aria-label="Decrease quantity">-</button>
+                                        <span class="quantity-display" aria-live="polite">1</span>
+                                        <button class="quantity-btn increase" aria-label="Increase quantity">+</button>
+                                    </div>
                                 </div>
                             </div>
+                        </article>
+                    </div>
+
+                    <dl class="order-summary">
+                        <div class="summary-row">
+                            <dt>Subtotal</dt>
+                            <dd>RM26.80</dd>
                         </div>
-                    </article>
-
-                    <article class="order-item">
-                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/cecc03d2899506c22de373a6f11b3f622f16832f5cf612b06176592bf7229af1?placeholderIfAbsent=true&apiKey=d0bcfac6773b422b93b43786ecb1116f" alt="Crazy Shawarma" class="item-image" width="72" height="108" />
-                        <div class="item-details">
-                            <div class="item-header">
-                                <div class="item-info">
-                                    <h3 class="item-name">Crazy Shawarma</h3>
-                                    <time class="item-time" datetime="2023-11-25T12:00">25 Nov, 12:00 pm</time>
-                                </div>
-                                <div class="price-info">
-                                    <p class="item-price">RM7.00</p>
-                                    <p class="item-quantity">1 item</p>
-                                </div>
-                            </div>
-                            <div class="item-actions">
-                                <button class="cancel-button" aria-label="Cancel Crazy Shawarma order">Cancel Order</button>
-                                <div class="quantity-control" role="group" aria-label="Item quantity controls">
-                                    <button class="quantity-btn decrease" aria-label="Decrease quantity">-</button>
-                                    <span class="quantity-display" aria-live="polite">1</span>
-                                    <button class="quantity-btn increase" aria-label="Increase quantity">+</button>
-                                </div>
-                            </div>
+                        <div class="summary-row">
+                            <dt>Delivery</dt>
+                            <dd>RM2.00</dd>
                         </div>
-                    </article>
-                </div>
+                        <div class="summary-row">
+                            <dt>Apply Coupons</dt>
+                            <dd>-RM0.00</dd>
+                        </div>
+                    </dl>
 
-                <dl class="order-summary">
-                    <div class="summary-row">
-                        <dt>Subtotal</dt>
-                        <dd>RM16.90</dd>
+                    <button class="coupon-input" aria-label="Enter coupon code">Enter here</button>
+
+                    <div class="coins-section">
+                        <span>Coins Redeem</span>
+                        <span>-RM3.00</span>
                     </div>
-                    <div class="summary-row">
-                        <dt>Delivery</dt>
-                        <dd>RM2.00</dd>
+
+                    <div class="total-section">
+                        <span>Total</span>
+                        <strong>RM25.80</strong>
                     </div>
-                    <div class="summary-row">
-                        <dt>Apply Coupons</dt>
-                        <dd>-RM0.00</dd>
+
+                    <div class="half-portion-section">
+                        <p class="half-portion-title">Can't finish the food?</p>
+                        <div class="half-portion-message">
+                            <div class="checkbox-container">
+                                <input type="checkbox" id="roundup" class="checkbox-input" />                    
+                            </div>
+                            <p>"Half the Portion, Half the Price – Zero Waste, Full Impact!"</p>
+                        </div>
                     </div>
-                </dl>
 
-                <button class="coupon-input" aria-label="Enter coupon code">Enter here</button>
-
-                <div class="coins-section">
-                    <span>Coins Redeem</span>
-                    <span>-RM3.00</span>
+                    <button class="place-order-button" aria-label="Place your order">Place Order</button>
                 </div>
-
-                <div class="total-section">
-                    <span>Total</span>
-                    <strong>RM17.90</strong>
-                </div>
-
-                <div class="half-portion-section">
-                    <p class="half-portion-title">Can't finish the food?</p>
-                    <div class="half-portion-message">
-                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/e5071ff7e032779d4d32c4316a09f60f2799e1788305cb0a051d556c4b50e2fb?placeholderIfAbsent=true&apiKey=d0bcfac6773b422b93b43786ecb1116f" alt="" class="info-icon" width="65" height="61" />
-                        <p>"Half the Portion, Half the Price – Zero Waste, Full Impact!"</p>
-                    </div>
-                </div>
-
-                <button class="place-order-button" aria-label="Place your order">Place Order</button>
-            </div>
-        </section>
-    </main>
-</body>
+            </section>
+        </main>
+    </body>
 </html>

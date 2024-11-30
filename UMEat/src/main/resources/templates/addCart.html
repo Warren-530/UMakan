@@ -1,86 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Shopping Cart</title>
-        <link rel="stylesheet" href="/css/addCartCss.css">
-    </head>
-    <body>
-        <div class="cart-container">
-            <div class="cart-wrapper">
-                <div class="cart-header">
-                    <div class="header-content">
-                        <div class="title-wrapper">
-                            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/6b5b8dddb00bc40219643e888b18307d55a612c4390e59e8e48b526d6b211777?placeholderIfAbsent=true&apiKey=20e9cf7e0b154765ac7db15245f319f4" class="back-icon" alt="Back button" />
-                            <div class="cart-title-wrapper">
-                                <div class="cart-title">My Cart</div>
-                                <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/b4e2f8e881ba50550a1025b2f1bd258467dde38abca0eeec68e1beaa8a048c5d?placeholderIfAbsent=true&apiKey=20e9cf7e0b154765ac7db15245f319f4" class="cart-icon" alt="Shopping cart icon" />
-                            </div>
-                        </div>
-                        <div class="cart-count">You have 3 items in the cart</div>
-                    </div>
-                    <div class="cart-content">
-                        <div class="cart-items-title">Items in cart:</div>
-                        <div class="cart-item">
-                            <div class="item-details">
-                                <div class="item-image-wrapper">
-                                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/47c8c6f2302c0b17040352ecc4970cbca51cb953d8349c4995483b2523d6d103?placeholderIfAbsent=true&apiKey=20e9cf7e0b154765ac7db15245f319f4" class="item-image" alt="Pistachio Cheesecake" />
-                                </div>
-                                <div class="item-info">
-                                    <div class="item-name">Pistachio Cheesecake</div>
-                                    <div class="item-price">RM9.90</div>
-                                </div>
-                            </div>
-                            <div class="item-meta">
-                                <div class="item-date">
-                                    <div>25/11/24</div>
-                                    <div class="item-time">15:00</div>
-                                </div>
-                                <div class="quantity-control">
-                                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/ba4a76263f6119cc909107973f190cbecd086c89e5ae584bc5d0716384cbe845?placeholderIfAbsent=true&apiKey=20e9cf7e0b154765ac7db15245f319f4" class="quantity-btn" alt="Decrease quantity" />
-                                    <div>2</div>
-                                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/6e15fefa42b9e13aa4ddc0925eada728fe719486ec96a98f90cb0c1870963485?placeholderIfAbsent=true&apiKey=20e9cf7e0b154765ac7db15245f319f4" class="quantity-btn" alt="Increase quantity" />
-                                </div>
-                            </div>
-                        </div>
-                        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/c3357326182722a9aa038904c7777a92af51a5ab34a11784a5aee75f8c8e4962?placeholderIfAbsent=true&apiKey=20e9cf7e0b154765ac7db15245f319f4" class="divider" alt="" />
-                        <div class="cart-item">
-                            <div class="item-details">
-                                <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/5afec3392a2a7cf3d55d5d0e62ed84382b940a9e0736993e838bceed45ded695?placeholderIfAbsent=true&apiKey=20e9cf7e0b154765ac7db15245f319f4" class="item-image" alt="Crazy Shawarma" />
-                                <div class="item-info">
-                                    <div class="item-name">Crazy Shawarma</div>
-                                    <div class="item-price">RM7.00</div>
-                                </div>
-                            </div>
-                            <div class="item-meta">
-                                <div class="item-date">
-                                    <div>25/11/24</div>
-                                    <div class="item-time">12:00</div>
-                                </div>
-                                <div class="quantity-control">
-                                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/ba4a76263f6119cc909107973f190cbecd086c89e5ae584bc5d0716384cbe845?placeholderIfAbsent=true&apiKey=20e9cf7e0b154765ac7db15245f319f4" class="quantity-btn" alt="Decrease quantity" />
-                                    <div>1</div>
-                                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/6e15fefa42b9e13aa4ddc0925eada728fe719486ec96a98f90cb0c1870963485?placeholderIfAbsent=true&apiKey=20e9cf7e0b154765ac7db15245f319f4" class="quantity-btn" alt="Increase quantity" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="order-summary">
-                            <div class="summary-labels">
-                                <div>Subtotal</div>
-                                <div class="delivery-label">Delivery</div>
-                                <div class="total-label">Total</div>
-                            </div>
-                            <div class="summary-values">
-                                <div>RM 16.90</div>
-                                <div class="delivery-value">RM 2.00</div>
-                                <div class="total-value">RM 18.90</div>
-                            </div>
-                        </div>
-                        <button class="place-order-btn">Place Order</button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Section</title>
+    <link rel="stylesheet" href="/css/addCartCss.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="div">
+        <div class="principal-page-version-1">
+            <div class="div-2">
+                <div class="div-3">
+                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/6b5b8dddb00bc40219643e888b18307d55a612c4390e59e8e48b526d6b211777?placeholderIfAbsent=true&apiKey=527172d7730945dc833e7de1a5dbb2ba" class="img" alt="Back button"/>
+                    <div class="div-4">
+                        <div class="my-cart">My Cart</div>
+                        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/b4e2f8e881ba50550a1025b2f1bd258467dde38abca0eeec68e1beaa8a048c5d?placeholderIfAbsent=true&apiKey=527172d7730945dc833e7de1a5dbb2ba" class="img-2" alt="Cart icon"/>
                     </div>
                 </div>
+                <div class="you-have-2-items-in-the-cart">You have 2 items in the cart</div>
+            </div>
+            <div class="div-5">
+                <div class="items-in-cart">Items in cart:</div>
+                <div class="div-6">
+                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/47c8c6f2302c0b17040352ecc4970cbca51cb953d8349c4995483b2523d6d103?placeholderIfAbsent=true&apiKey=527172d7730945dc833e7de1a5dbb2ba" class="img-3" alt="Pistachio Cheesecake"/>
+                    <div class="div-7">
+                        <div class="div-8">
+                            <div class="pistachio-cheesecake">Pistachio Cheesecake</div>
+                            <div class="div-9">
+                                <div>25/11/24</div>
+                                <div class="time-15">15:00</div>
+                            </div>
+                        </div>
+                        <div class="div-10">
+                            <div class="rm-9-90">RM9.90</div>
+                            <div class="div-11">
+                                <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/ba4a76263f6119cc909107973f190cbecd086c89e5ae584bc5d0716384cbe845?placeholderIfAbsent=true&apiKey=527172d7730945dc833e7de1a5dbb2ba" class="img-4" alt="Decrease quantity"/>
+                                <div>2</div>
+                                <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/6e15fefa42b9e13aa4ddc0925eada728fe719486ec96a98f90cb0c1870963485?placeholderIfAbsent=true&apiKey=527172d7730945dc833e7de1a5dbb2ba" class="img-5" alt="Increase quantity"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/003ecb321d8178e33d18100f6f10b7488d425780ef30788f38e0afea493ca552?placeholderIfAbsent=true&apiKey=527172d7730945dc833e7de1a5dbb2ba" class="img-6" alt="Divider"/>
+                <div class="div-12">
+                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/94a61be7380a086b0ac98c7244e83f45927888f7fa22125727610a706f453480?placeholderIfAbsent=true&apiKey=527172d7730945dc833e7de1a5dbb2ba" class="img-7" alt="Crazy Shawarma"/>
+                    <div class="div-13">
+                        <div class="div-14">
+                            <div class="crazy-shawarma">Crazy Shawarma</div>
+                            <div class="rm-7-00">RM7.00</div>
+                        </div>
+                    </div>
+                    <div class="div-15">
+                        <div class="div-16">
+                            <div class="div-17">
+                                <div class="div-18">
+                                    <div>25/11/24</div>
+                                    <div class="time-12">12:00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="div-19">
+                            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/ba4a76263f6119cc909107973f190cbecd086c89e5ae584bc5d0716384cbe845?placeholderIfAbsent=true&apiKey=527172d7730945dc833e7de1a5dbb2ba" class="img-8" alt="Decrease quantity"/>
+                            <div>1</div>
+                            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/6e15fefa42b9e13aa4ddc0925eada728fe719486ec96a98f90cb0c1870963485?placeholderIfAbsent=true&apiKey=527172d7730945dc833e7de1a5dbb2ba" class="img-9" alt="Increase quantity"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="div-20">
+                    <div class="div-21">
+                        <div>Subtotal</div>
+                        <div class="delivery">Delivery</div>
+                        <div class="total">Total</div>
+                    </div>
+                    <div class="div-22">
+                        <div>RM 26.80</div>
+                        <div class="rm-2-00">Based on service</div>
+                        <div class="rm-18-90">RM 26.80</div>
+                    </div>
+                </div>
+                <button class="filter">Check Out</button>
             </div>
         </div>
-    </body>
+    </div>
+</body>
 </html>

@@ -51,14 +51,29 @@ public class WebController {
         return "shippingFullPortion";
     }
 
-    @GetMapping("/pickupfullportion")
-    public String pickupFullPortion() {
-        return "pickupFullPortion";
+    @GetMapping("/shippinghalfpayment")
+    public String shippingHalfPayment() {
+        return "shippingHalfPayment";
     }
 
-    @GetMapping("/pickuphalfportion")
-    public String pickupHalfPortion() {
-        return "pickupHalfPortion";
+    @GetMapping("/shippingfullpayment")
+    public String shippingFullPayment() {
+        return "shippingFullPayment";
+    }
+
+    @GetMapping("/pickupfullpayment")
+    public String pickupFullPayment() {
+        return "pickupFullPayment";
+    }
+
+    @GetMapping("/pickuphalfpayment")
+    public String pickupHalfPayment() {
+        return "pickupHalfPayment";
+    }
+
+    @GetMapping("/pickupfullportion")
+    public String pickupfullportion() {
+        return "pickupFullPortion";
     }
 
     @GetMapping("/orderconfirmed")
@@ -124,11 +139,6 @@ public class WebController {
     @GetMapping("/addcart")
     public String addCart() {
         return "addCart";
-    }
-
-    @GetMapping("/shippinghalfportion")
-    public String shippingHalfPortion() {
-        return "shippingHalfPortion";
     }
 
     @GetMapping("/diningtime")
