@@ -1,12 +1,10 @@
-# 24004471
-
-
-
 ## Getting started
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+**This is a Apache Netbeans Spring Boot project, to open our website, please download Spring Boot plugin to run our website.**
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+To open the website in browser, please ensure you connect to the correct URL http://localhost:8080/ . 
+
+If you use devices other than your local device, please change the 'loccalhost' to the IPv4 address of your local device, and make sure your local device and the device using are connected to the same network to ensure a proper connection.
 
 ## Add your files
 
