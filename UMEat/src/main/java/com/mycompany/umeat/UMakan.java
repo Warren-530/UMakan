@@ -4,9 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class UMEat {
+public class UMakan {
 
     public static void main(String[] args) {
-        SpringApplication.run(UMEat.class, args);
+        SpringApplication.run(UMakan.class, args);
     }
 }

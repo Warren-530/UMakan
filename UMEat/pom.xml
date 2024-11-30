@@ -72,4 +72,5 @@
             </plugin>
         </plugins>
     </build>
+    <name>UMakan</name>
 </project>
