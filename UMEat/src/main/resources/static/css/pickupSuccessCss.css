@@ -29,8 +29,7 @@
   align-self: stretch;
   display: flex;
   min-width: var(--min-section-width);
-  width: 100%;
-  flex-direction: column;
+  width: 100%; 
   flex: 1;
   flex-basis: 0%;
   margin: auto 0;
@@ -41,7 +40,46 @@
   aspect-ratio: 0.64;
   object-fit: contain;
   object-position: center;
-  width: 100%;
+  width: auto;
+}
+.main-page-button {
+    background-color: transparent;
+    color: transparent;
+    padding: 123px 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20%;
+    position: relative;
+    left: -400px;
+    top: 1200px;
+    width: 20%;
+    height: 0px;
+    font-size: 76%;
+    z-index:1;
+}
+
+/* Remove text underline on hover */
+.main-page-button:hover {
+    text-decoration: none;
+}
+
+/* Styles for the Back Arrow button */
+.back-arrow {
+    background-color: #transparent;
+    color: transparent;
+    padding: 8px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 100%;
+    position: relative;
+    left: 65px;
+    top: 12px;
+    width: 2.5%;
+    height: 20%;
+    font-size: 20%;
+    z-index:1;
 }
 
 
@@ -49,6 +87,6 @@
   .content-wrapper,
   .image-container,
   .responsive-image {
-    max-width: 100%;
-  }
+    max-width: 100%;
+  }
 }

@@ -5,7 +5,6 @@
   justify-content: start;
 }
 
-
 .content-wrapper {
   align-self: stretch;
   display: flex;
@@ -15,7 +14,6 @@
   justify-content: start;
   margin: auto 0;
 }
-
 
 .delivery-section {
   align-self: stretch;
@@ -27,7 +25,6 @@
   margin: auto 0;
 }
 
-
 .image-container {
   align-self: stretch;
   display: flex;
@@ -36,14 +33,12 @@
   margin: auto 0;
 }
 
-
 .delivery-image {
   aspect-ratio: 0.64;
   object-fit: contain;
   object-position: center;
   width: 100%;
 }
-
 
 @media (max-width: 991px) {
   .content-wrapper,
@@ -54,8 +49,69 @@
   }
 }
 
+.button-container {
+  position: relative;
+  bottom: 120px;
+  left: 68%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 3rem;
+  z-index: 1;
+}
+
+.button {
+  background-color: #007bff;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  opacity: 0;
+  pointer-events: auto;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.button:focus {
+  outline: 2px solid #0056b3;
+}
+
+.invisible-button {
+  position: relative;
+  top: 15px;
+  left: 18px;
+  width: 10px;
+  height: 10px;
+  background: black;
+  opacity: 0;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.invisible-button:focus {
+  outline: 2px solid blue;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
 
 :root {
   --black: #000;
-  --white: #fff;
+  --white: #fff;
 }
